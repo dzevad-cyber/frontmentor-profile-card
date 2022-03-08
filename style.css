@@ -43,19 +43,10 @@ body {
   line-height: 1.5;
   letter-spacing: 1px;
   background-color: var(--bg-color);
-  /* background-image: url('./images/bg-pattern-top.svg'); */
   background-image: url('./images/bg-pattern-top.svg'),
     url('./images/bg-pattern-bottom.svg');
   background-repeat: no-repeat, no-repeat;
 
-  /* desktop */
-  background-position: -250px -400px, 150% -150%;
-
-  /* background-position: 10%, -150%, 150% -150%; */
-  /* background-position: -150% 150%; */
-  /* background-position: 125% 200%, 70% -200%; */
-
-  /* mobile */
   background-position: 125% 200%, -33% -81%;
 
   display: grid;
@@ -77,7 +68,7 @@ img {
 
 /*
 ------------------------------
- PROFILE CARD styles
+ PROFILE CARD styles - MOBILE
 ------------------------------
 */
 .profile-card {
@@ -153,13 +144,17 @@ img {
   color: var(--color-three);
 }
 
+.profile-card__stats-section > span {
+  display: block;
+}
+
 /*
 ------------------------------
- MEDIA QUERY
+  DESKTOP STYLES
 ------------------------------
 */
-@media (min-width: 600px) {
+@media (min-width: 37.5em) {
   body {
-    background-position: -250px -400px, 150% -150%;
+    background-position: right 52vw bottom 35vh, left 48vw top 52vh;
   }
 }

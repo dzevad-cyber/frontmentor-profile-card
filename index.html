@@ -14,37 +14,39 @@
     <title>Frontend Mentor | Profile card component</title>
   </head>
   <body>
-    <article class="profile-card">
-      <header class="profile-card__header">
-        <img
-          src="./images/image-victor.jpg"
-          alt="profile photo"
-          title="profile card header photo"
-          class="profile-card__img"
-        />
-      </header>
-      <section class="profile-card__main">
-        <div class="profile-card__info">
-          <h2 class="profile-card__name">
-            Victor Crest <span class="profile-card__age">26</span>
-          </h2>
-          <p class="profile-card__city">London</p>
-        </div>
-        <div class="profile-card__stats">
-          <div class="profile-card__stats-section">
-            <p class="profile-card__n-stat">80K</p>
-            <p class="profile-card__stat-name">Followers</p>
+    <main>
+      <article class="profile-card">
+        <header class="profile-card__header">
+          <img
+            src="./images/image-victor.jpg"
+            alt="profile photo"
+            title="profile card header photo"
+            class="profile-card__img"
+          />
+        </header>
+        <section class="profile-card__main">
+          <div class="profile-card__info">
+            <h2 class="profile-card__name">
+              Victor Crest <span class="profile-card__age">26</span>
+            </h2>
+            <span class="profile-card__city">London</span>
           </div>
-          <div class="profile-card__stats-section">
-            <p class="profile-card__n-stat">803K</p>
-            <p class="profile-card__stat-name">Likes</p>
-          </div>
-          <div class="profile-card__stats-section">
-            <p class="profile-card__n-stat">1.4K</p>
-            <p class="profile-card__stat-name">Photos</p>
-          </div>
-        </div>
-      </section>
-    </article>
+          <ul class="profile-card__stats">
+            <li class="profile-card__stats-section">
+              <span class="profile-card__n-stat">80K</span>
+              <span class="profile-card__stat-name">Followers</span>
+            </li>
+            <li class="profile-card__stats-section">
+              <span class="profile-card__n-stat">803K</span>
+              <span class="profile-card__stat-name">Likes</span>
+            </li>
+            <li class="profile-card__stats-section">
+              <span class="profile-card__n-stat">1.4K</span>
+              <span class="profile-card__stat-name">Photos</span>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
   </body>
 </html>
